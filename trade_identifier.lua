@@ -1,5 +1,5 @@
-local old = 'steam:11000014bd9fa6c'
-local new = 'steam:11000014f9563b9'
+local old = ''
+local new = ''
 
 print('UPDATE owned_vehicles\n'..
 'SET owner = "'..new..'"\n'..
