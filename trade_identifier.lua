@@ -1,7 +1,7 @@
 local src = {
     {
-        old = 'steam:11000013bcebb88',
-        new = 'steam:11000015a9748d9',
+        old = '',
+        new = '',
     },
 }
 
