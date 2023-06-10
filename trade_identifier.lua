@@ -53,7 +53,7 @@ for i=1, #src do
     'WHERE identifier = "'..s.old..'";\n\n'..
     
     'UPDATE user_discord\n'..
-    'SET discord = "'..s.dis..'"\n'..
+    'SET discord = "'..s.dis..'", identifier = "'..string.gsub(s.new,'steam:','')..'" \n'..
     'WHERE identifier = "'..string.gsub(s.old,'steam:','')..'";\n\n'
 
     )
