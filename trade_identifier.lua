@@ -1,7 +1,8 @@
 local src = {
     {
-        old = '',
-        new = '',
+        old = 'steam:110000115483d91',
+        new = 'steam:110000152d9e768',
+        dis = '1107205145852383274'
     },
 }
 
@@ -49,7 +50,12 @@ for i=1, #src do
     
     'UPDATE characters\n'..
     'SET identifier = "'..s.new..'"\n'..
-    'WHERE identifier = "'..s.old..'";\n\n'
+    'WHERE identifier = "'..s.old..'";\n\n'..
+    
+    'UPDATE user_discord\n'..
+    'SET discord = "'..s.dis..'"\n'..
+    'WHERE identifier = "'..string.gsub(s.old,'steam:','')..'";\n\n'
+
     )
 
     print('/* -------------------------------------------------------- */')
