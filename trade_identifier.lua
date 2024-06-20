@@ -51,7 +51,15 @@ for i=1, #src do
     'UPDATE characters\n'..
     'SET identifier = "'..s.new..'"\n'..
     'WHERE identifier = "'..s.old..'";\n\n'..
-    
+
+	'UPDATE what_premium\n'..
+    'SET identifier = "'..s.new..'"\n'..
+    'WHERE identifier = "'..s.old..'";\n\n'..
+
+	'UPDATE what_fashion\n'..
+    'SET identifier = "'..s.new..'"\n'..
+    'WHERE identifier = "'..s.old..'";\n\n'..
+
     'UPDATE user_discord\n'..
     'SET discord = "'..s.dis..'", identifier = "'..string.gsub(s.new,'steam:','')..'" \n'..
     'WHERE identifier = "'..string.gsub(s.old,'steam:','')..'";\n\n'
