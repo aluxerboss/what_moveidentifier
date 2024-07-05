@@ -52,11 +52,15 @@ for i=1, #src do
     'SET identifier = "'..s.new..'"\n'..
     'WHERE identifier = "'..s.old..'";\n\n'..
 
-	'UPDATE what_premium\n'..
+    'UPDATE what_premium\n'..
     'SET identifier = "'..s.new..'"\n'..
     'WHERE identifier = "'..s.old..'";\n\n'..
 
-	'UPDATE what_fashion\n'..
+    'UPDATE what_fashion\n'..
+    'SET identifier = "'..s.new..'"\n'..
+    'WHERE identifier = "'..s.old..'";\n\n'..
+
+    'UPDATE what_gpl2024\n'..
     'SET identifier = "'..s.new..'"\n'..
     'WHERE identifier = "'..s.old..'";\n\n'..
 
