@@ -68,10 +68,6 @@ for i=1, #src do
     'SET identifier = "'..s.new..'"\n'..
     'WHERE identifier = "'..s.old..'";\n\n'..
 
-    'UPDATE weapon_skins\n'..
-    'SET identifier = "'..s.new..'"\n'..
-    'WHERE identifier = "'..s.old..'";\n\n'..
-
     'UPDATE user_discord\n'..
     'SET discord = "'..s.dis..'", identifier = "'..string.gsub(s.new,'steam:','')..'" \n'..
     'WHERE identifier = "'..string.gsub(s.old,'steam:','')..'";\n\n'
